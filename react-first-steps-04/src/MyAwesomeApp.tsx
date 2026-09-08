@@ -1,7 +1,7 @@
 import { CSSProperties } from 'react';
 
-const firstName = 'Fernando';
-const lastName = 'Herrera';
+const firstName = 'Uusrio';
+const lastName = '1123';
 
 const favoriteGames = ['Elden Ring', 'Smash', 'Metal Gear'];
 const isActive = false;
@@ -21,8 +21,8 @@ const myStyles: CSSProperties = {
 
 export const MyAwesomeApp = () => {
   return (
-    <>
-      <h1> {firstName} </h1>
+    <div data-testid="div-in">
+      <h1 data-testid="numero1"> {firstName} </h1>
       <h3> {lastName} </h3>
 
       <p>{favoriteGames.join(', ')}</p>
@@ -31,7 +31,7 @@ export const MyAwesomeApp = () => {
       <h1>{isActive ? 'Activo' : 'No activo'}</h1>
 
       <p style={myStyles}>{JSON.stringify(address)}</p>
-    </>
+    </div>
   );
 };
 
