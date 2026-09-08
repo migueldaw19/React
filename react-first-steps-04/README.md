@@ -17,19 +17,19 @@ npm create vite
 
 ### Una vez instalado vitest hay que añadir las siguientes lineas en el package.json en el apartado scripts
 
-``bash
+```bash
     "test":"vitest",
     "test:ui":"vitest --ui",
     "coverage":"vitest run --coverage"
-``
+```
 
 ## Testing Library para react +  typescript
 
-``bash
+```bash
 
 npm install --save-dev @testing-library/react @testing-library/dom @types/react @types/react-dom
 
-``
+```
 
 ### en MyAwesome.testApp.tsx hay una guia para testing de react (requiere modificar el vite.config.ts)
 
